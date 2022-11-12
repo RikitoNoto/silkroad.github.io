@@ -1,0 +1,42 @@
+
+.background-pattern-green {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    height: 100px;
+    width: 70%;
+    background-color: #38B6FF;
+}
+
+.background-pattern-cyan {
+    float: right;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    height: 100px;
+    width: 70%;
+    background-color: #7ED957;
+}
+
+.section-image {
+    width: 100%;
+}
+
+.download-icon {
+    font-size: 32px;
+}
+
+.download-button {
+    margin: 10px;
+}
+
+footer a {
+    color: grey;
+}
+
+footer img {
+    width: 24px;
+}
+
+footer {
+    color: grey;
+    font-size: 12px;
+}

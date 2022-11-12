@@ -3,7 +3,7 @@
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     height: 100px;
-    width: 70%;
+    width: 80%;
     background-color: #38B6FF;
 }
 
@@ -12,8 +12,12 @@
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     height: 100px;
-    width: 70%;
+    width: 80%;
     background-color: #7ED957;
+}
+
+section {
+    padding-top: 10px;
 }
 
 .section-image {

@@ -1,22 +1,19 @@
 <template>
   <header class="header">
-    <nav class="header__nav">
-      <a class="header__nav__button">
-        デバイス一覧
-      </a>
-      <a class="header__nav__button">
-        ダウンロード
-      </a>
-      <a class="header__nav__button">
-        使い方
-      </a>
-    </nav>
+    <img class="header__logo" src="@/assets/logo.png"/>
+    <b-nav class="header__nav">
+      <b-nav-item class="header__nav__item" href="#">ダウンロード</b-nav-item>
+      <b-nav-item class="header__nav__item" href="#">対応デバイス</b-nav-item>
+      <b-nav-item class="header__nav__item" href="#">アップデート情報</b-nav-item>
+      <b-nav-item class="header__nav__item" href="#">お問い合わせ</b-nav-item>
+    </b-nav>
   </header>
   <div class="main">
     <Devices></Devices>
     <Downloads></Downloads>
     <HowTo></HowTo>
   </div>
+  <button type="button" class="btn btn-primary">Bootstrap</button>
 </template>
 
 <script>
@@ -49,32 +46,30 @@ export default {
   position: relative;
   height: 50px;
   width: 100vw;
-  margin-bottom: 25px;
   z-index: 0;
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
+  justify-content: space-between;
+  display: flex;
+  padding: 0 2rem;
+
+  &__logo {
+    display: inline-block;
+    justify-content: left;
     height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: var(--main_color1);
-    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .2);
+    position: relative;
+    padding: 0.5rem;
   }
 
   &__nav {
-    display: flex;
-    align-items: center;
-    justify-content: right;
+    display: inline-flex;
     height: 100%;
-    width: 100%;
-    text-align: right;
     position: relative;
-    &__button {
+    align-items: center;
+
+    &__item {
       position: inherit;
-      color: white;
-      z-index: 1;
+      padding: 0 0.5rem;
+      font-weight: 600;
+      color: grey;
     }
   }
 }

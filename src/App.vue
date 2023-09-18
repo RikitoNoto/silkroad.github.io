@@ -9,6 +9,7 @@
     </b-nav>
   </header>
   <div class="main">
+    <TopSection></TopSection>
     <Devices></Devices>
     <Downloads></Downloads>
     <HowTo></HowTo>
@@ -19,11 +20,13 @@
 <script>
 import Devices from './components/templates/Devices.vue'
 import Downloads from './components/templates/Downloads.vue'
+import TopSection from './components/templates/TopSection.vue'
 import HowTo from './components/templates/HowTo.vue'
 
 export default {
   name: 'App',
   components: {
+    TopSection,
     Devices,
     Downloads,
     HowTo,

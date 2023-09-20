@@ -10,8 +10,8 @@
   </header>
   <div class="main">
     <TopSection></TopSection>
-    <Devices></Devices>
     <Downloads></Downloads>
+    <Devices></Devices>
     <HowTo></HowTo>
   </div>
   <button type="button" class="btn btn-primary">Bootstrap</button>

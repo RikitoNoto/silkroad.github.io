@@ -2,17 +2,16 @@
   <header class="header">
     <img class="header__logo" src="@/assets/logo.png"/>
     <b-nav class="header__nav">
-      <b-nav-item class="header__nav__item" href="#">ダウンロード</b-nav-item>
-      <b-nav-item class="header__nav__item" href="#">対応デバイス</b-nav-item>
-      <b-nav-item class="header__nav__item" href="#">アップデート情報</b-nav-item>
-      <b-nav-item class="header__nav__item" href="#">お問い合わせ</b-nav-item>
+      <a class="header__nav__item" href="#downloads">ダウンロード</a>
+      <a class="header__nav__item" href="#news">News</a>
+      <a class="header__nav__item" href="#">お問い合わせ</a>
     </b-nav>
   </header>
   <div class="main">
     <TopSection></TopSection>
     <Downloads></Downloads>
+    <News></News>
     <Devices></Devices>
-    <HowTo></HowTo>
   </div>
   <button type="button" class="btn btn-primary">Bootstrap</button>
 </template>
@@ -21,7 +20,7 @@
 import Devices from './components/templates/Devices.vue'
 import Downloads from './components/templates/Downloads.vue'
 import TopSection from './components/templates/TopSection.vue'
-import HowTo from './components/templates/HowTo.vue'
+import News from './components/templates/News.vue'
 
 export default {
   name: 'App',
@@ -29,7 +28,7 @@ export default {
     TopSection,
     Devices,
     Downloads,
-    HowTo,
+    News,
   }
 }
 </script>
@@ -73,6 +72,7 @@ export default {
       padding: 0 0.5rem;
       font-weight: 600;
       color: grey;
+      text-decoration: none;
     }
   }
 }

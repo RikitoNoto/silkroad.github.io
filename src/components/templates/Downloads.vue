@@ -53,7 +53,7 @@ export default {
 
 <style lang="scss">
 .download {
-  padding: 5%;
+  padding: 2% 5%;
 
   &__title {
     border-bottom: 1px solid rgb(90,90,90,0.3);

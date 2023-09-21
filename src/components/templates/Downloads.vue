@@ -1,8 +1,8 @@
 <template>
   <div class="download">
-    <p class="fs-2 download__title">ダウンロード</p>
+    <p id="downloads" class="fs-2 download__title">ダウンロード</p>
     <p>
-      <a type="button" class="btn btn-outline-secondary custom-btn-size download__button">
+      <a type="button" class="btn btn-outline-secondary custom-btn-size download__button" href="/downloads/silkroad-win-1.2.0.zip" download>
         <font-awesome-icon :icon="['fab', 'windows']" />
         Windows 1.2.0 をダウンロード
       </a>
@@ -10,14 +10,14 @@
 
 
     <p>
-      <a type="button" class="btn btn-outline-secondary custom-btn-size download__button">
+      <a type="button" class="btn btn-outline-secondary custom-btn-size download__button" href="/downloads/silkroad-mac-1.2.0.zip" download>
         <font-awesome-icon :icon="['fab', 'apple']" />
         MacOS 1.2.0 をダウンロード
       </a>
     </p>
 
     <p>
-      <a type="button" class="btn btn-outline-secondary custom-btn-size download__button">
+      <a type="button" class="btn btn-outline-secondary custom-btn-size download__button" href="/downloads/silkroad-ubuntu-1.2.0.zip" download>
         <font-awesome-icon :icon="['fab', 'ubuntu']" />
         Ubuntu 1.2.0 をダウンロード
       </a>
@@ -44,7 +44,8 @@ export default {
 
   mounted () {
   },
-
+  methods: {
+  },
   computed: {
   }
 }

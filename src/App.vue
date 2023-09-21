@@ -4,20 +4,19 @@
     <b-nav class="header__nav">
       <a class="header__nav__item" href="#downloads">ダウンロード</a>
       <a class="header__nav__item" href="#news">News</a>
-      <a class="header__nav__item" href="#">お問い合わせ</a>
+      <a class="header__nav__item" href="#contact">お問い合わせ</a>
     </b-nav>
   </header>
   <div class="main">
     <TopSection></TopSection>
     <Downloads></Downloads>
     <News></News>
-    <Devices></Devices>
+    <Contact></Contact>
   </div>
-  <button type="button" class="btn btn-primary">Bootstrap</button>
 </template>
 
 <script>
-import Devices from './components/templates/Devices.vue'
+import Contact from './components/templates/Contact.vue'
 import Downloads from './components/templates/Downloads.vue'
 import TopSection from './components/templates/TopSection.vue'
 import News from './components/templates/News.vue'
@@ -26,7 +25,7 @@ export default {
   name: 'App',
   components: {
     TopSection,
-    Devices,
+    Contact,
     Downloads,
     News,
   }
